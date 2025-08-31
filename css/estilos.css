@@ -1,0 +1,91 @@
+/* Reset de márgenes y paddings para un mejor control */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FF7F50, #1E90FF); /* Degradado colorido */
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+.contenedor {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+/* Estilo del selector */
+select {
+    background-color: #fff;
+    color: #333;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+select:hover {
+    background-color: #FF7F50;
+    color: #fff;
+}
+
+/* Estilo para el reproductor de audio */
+audio {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 15px;
+    outline: none;
+    background: #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+audio::-webkit-media-controls-panel {
+    background: linear-gradient(135deg, #FF7F50, #1E90FF); /* Colores degradados en los controles */
+}
+
+/* Botones de control */
+audio::-webkit-media-controls-play-button {
+    background-color: #1E90FF;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: #FF7F50;
+}
+
+/* Agregar animaciones sutiles */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
